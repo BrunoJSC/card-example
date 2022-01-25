@@ -1,0 +1,138 @@
+:root {
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  max-width: 400px;
+  height: 35rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-radius: 0.6rem;
+  background-color: var(--very-pale-blue);
+
+  box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 100%;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.text {
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px 50px 10px 50px;
+}
+
+div.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 25px 40px 10px 40px;
+}
+
+div.info > p.price {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p.price > span {
+  margin-bottom: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+div.info a {
+  text-decoration: none;
+  color: grey;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+
+  transition: filter 0.2s;
+}
+
+div.info a:hover {
+  filter: brightness(0.9);
+  color: rgb(102, 79, 129);
+}
+
+span img.music {
+  width: 32px;
+  height: 32px;
+}
+
+div.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button.button {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--Desaturated-blue);
+  color: white;
+
+  border: none;
+  border-radius: 0.7rem;
+
+  padding: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  transition: filter 0.2s;
+
+  cursor: pointer;
+}
+
+button.button:hover {
+  filter: brightness(0.9);
+}
+
+.container-button a.cancel {
+  margin-top: 2rem;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  
+  transition: filter 0.2s;
+
+  color: grey;
+}
+
+.container-button a.cancel:hover {
+  filter: brightness(0.9);
+}
